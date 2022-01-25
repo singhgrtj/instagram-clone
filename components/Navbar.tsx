@@ -17,10 +17,10 @@ const Navbar: React.FC<Props> = (props) => {
   const {} = props
 
   return (
-    <nav className="border-b-2 border-gray-100 bg-white p-4">
+    <nav className="sticky top-0 z-50 border-b border-gray-300 bg-white p-4">
       <div className="mx-auto flex items-center justify-between lg:max-w-5xl">
         <img
-          className="w-28 object-contain"
+          className="w-28 object-cover"
           src="/logo-instagram.png"
           alt="instagram logo"
         />
@@ -33,11 +33,11 @@ const Navbar: React.FC<Props> = (props) => {
               className="bg-gray-100 py-1"
             />
           </div>
-          <IoHomeOutline size={25} />
-          <IoPaperPlaneOutline size={25} />
-          <IoAddCircleOutline size={25} />
-          <IoCompassOutline size={25} />
-          <IoHeartOutline size={25} />
+          <IoHomeOutline size={25} className="cursor-pointer" />
+          <IoPaperPlaneOutline size={25} className="cursor-pointer" />
+          <IoAddCircleOutline size={25} className="cursor-pointer" />
+          <IoCompassOutline size={25} className="cursor-pointer" />
+          <IoHeartOutline size={25} className="cursor-pointer" />
           <img className="h-8 w-8 rounded-full object-cover" src="/elon.png" />
         </div>
       </div>
