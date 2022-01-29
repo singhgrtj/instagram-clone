@@ -10,7 +10,7 @@ const name: React.FC<Props> = (props) => {
   const {} = props
 
   return (
-    <div className="flex max-w-3xl items-center space-x-4 overflow-x-scroll border-b border-gray-300 bg-white px-4 py-3 sm:border">
+    <div className="flex items-center space-x-4 overflow-x-scroll border-b border-gray-300 bg-white px-4 py-3 sm:border">
       <Story />
       <Story />
     </div>
